@@ -1,72 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Muskan Sharma | Computer Science Developer</title>
-<style>
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;background:#080b14;color:#f5f7ff;line-height:1.6}
-a{color:inherit;text-decoration:none}.wrap{max-width:1050px;margin:auto;padding:0 22px}
-nav{position:fixed;top:0;width:100%;z-index:5;background:#080b14ee;border-bottom:1px solid #252a3a}
-.nav{height:65px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-size:22px;font-weight:bold}.logo span,h1 span{color:#8b7cff}
-.links{display:flex;gap:22px;color:#a9b1c6;font-size:14px}.links a:hover{color:white}
-.hero{min-height:100vh;display:flex;align-items:center;padding-top:80px;background:radial-gradient(circle at 80% 25%,#8b7cff30,transparent 35%)}
-.herogrid{display:grid;grid-template-columns:1.4fr .7fr;gap:60px;align-items:center}
-.badge{display:inline-block;border:1px solid #34394d;border-radius:30px;padding:6px 13px;color:#5eead4;font-size:13px;margin-bottom:20px}
-h1{font-size:clamp(45px,7vw,78px);line-height:1;letter-spacing:-3px;margin-bottom:22px}
-.hero p{color:#a9b1c6;max-width:680px;font-size:17px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn{display:inline-block;padding:11px 17px;border:1px solid #34394d;border-radius:9px;font-weight:bold}
-.primary{background:#8b7cff;border-color:#8b7cff}.card{background:#101522;border:1px solid #252a3a;border-radius:18px;padding:25px}
-.profile{text-align:center}.avatar{width:140px;height:140px;border-radius:50%;margin:0 auto 18px;display:grid;place-items:center;font-size:45px;font-weight:bold;background:linear-gradient(135deg,#8b7cff,#5eead4);color:#080b14}
-.profile p,.card p,.card li{color:#a9b1c6}.profile h2{margin-bottom:5px}
-section{padding:85px 0}.title{font-size:31px;margin-bottom:8px}.sub{color:#a9b1c6;margin-bottom:30px}
-.skills{display:flex;flex-wrap:wrap;gap:9px}.skill{border:1px solid #34394d;background:#11172a;padding:7px 11px;border-radius:20px;font-size:13px;color:#ddd9ff}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{height:100%}.tag{color:#5eead4;font-size:12px;font-weight:bold;display:block;margin-bottom:8px}
-.timeline{border-left:1px solid #34394d;padding-left:24px}.item{margin-bottom:32px}.date{color:#5eead4;font-size:13px;font-weight:bold}.item li{margin-left:20px}
-.contact{text-align:center;background:#8b7cff0b}.contact .buttons{justify-content:center}
-footer{text-align:center;padding:28px;color:#777f95;border-top:1px solid #252a3a;font-size:13px}
-@media(max-width:700px){.links{display:none}.herogrid,.grid{grid-template-columns:1fr}.hero{text-align:center}.hero p{margin:auto}.buttons{justify-content:center}.profile{max-width:350px;margin:auto}}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Muskan Sharma — Computer Science student, developer and builder." />
+  <title>Muskan Sharma — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<nav><div class="wrap nav"><a class="logo" href="#home">Muskan<span>.</span></a>
-<div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></div></nav>
+  <div class="paper-grain"></div>
+  <div class="cursor-dot"></div>
 
-<header class="hero" id="home"><div class="wrap herogrid">
-<div><span class="badge">Computer Science Undergraduate • Developer</span>
-<h1>Hi, I'm <span>Muskan Sharma.</span></h1>
-<p>Motivated Computer Science undergraduate with hands-on experience in web and backend development. I enjoy building practical software using PHP, Python, Flask, databases and modern development tools.</p>
-<div class="buttons"><a class="btn primary" href="#projects">View My Work</a><a class="btn" href="https://www.linkedin.com/in/muskan-sharma-4a32b9333/" target="_blank">LinkedIn ↗</a><a class="btn" href="https://github.com/Muskan99113-cell" target="_blank">GitHub ↗</a></div></div>
-<div class="card profile"><div class="avatar">MS</div><h2>Muskan Sharma</h2><p>B.Sc. Computer Science<br>Ramanujan College, University of Delhi<br>2024 – 2027</p></div>
-</div></header>
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Muskan home"><span>MS</span><i>✦</i></a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#github-projects">Projects</a>
+      <a href="#hackathons">Hackathons</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-github" href="https://github.com/Muskan99113-cell" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </header>
 
-<section id="about"><div class="wrap"><h2 class="title">About Me</h2><p class="sub">A quick introduction</p><div class="card"><p>I am a Computer Science undergraduate focused on software development, backend technologies, databases, APIs and cloud technologies. I am a quick learner who enjoys solving problems and exploring new technologies.</p></div></div></section>
+  <main>
+    <section class="desk-intro" id="home">
+      <div class="desk-object keyboard">⌨</div>
+      <div class="desk-object coffee">☕<small>coffee first</small></div>
+      <div class="desk-object plant">🌿</div>
+      <div class="desk-object lamp">◖</div>
+      <div class="desk-object note note-a">build<br>something<br>useful.</div>
+      <div class="desk-object note note-b">ideas →<br>code →<br>impact</div>
+      <div class="doodle doodle-star">✦</div>
+      <div class="doodle doodle-spark">✧</div>
+      <div class="doodle doodle-heart">♡</div>
 
-<section id="skills"><div class="wrap"><h2 class="title">Technical Skills</h2><p class="sub">Technologies I work with and explore</p>
-<div class="skills">
-<span class="skill">Python</span><span class="skill">C</span><span class="skill">C++</span><span class="skill">PHP</span><span class="skill">Flask</span><span class="skill">SQL</span><span class="skill">MySQL</span><span class="skill">PostgreSQL</span><span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span><span class="skill">Bootstrap</span><span class="skill">JSON</span><span class="skill">REST APIs</span><span class="skill">Docker</span><span class="skill">Data Structures</span><span class="skill">Networking</span><span class="skill">Prolog</span><span class="skill">AI/ML</span><span class="skill">Git/GitHub</span><span class="skill">Linux</span><span class="skill">Operating Systems</span><span class="skill">DBMS</span>
-</div></div></section>
+      <div class="notebook-wrap" id="notebook">
+        <button class="notebook" aria-label="Open portfolio">
+          <div class="notebook-spine"></div>
+          <div class="cover-label">
+            <span class="tiny">MS</span>
+            <strong>portfolio</strong>
+            <small>DESIGN + CODE</small>
+          </div>
+          <div class="cover-bottom">tap to open ♡</div>
+        </button>
+      </div>
+      <p class="desk-hint">a little corner of the internet, made by me <span>↓</span></p>
+    </section>
 
-<section id="experience"><div class="wrap"><h2 class="title">Experience</h2><p class="sub">Professional and leadership experience</p><div class="timeline">
-<div class="item"><div class="date">18 June 2026 – 31 July 2026</div><h3>Web Development Intern — Technology Department</h3><p>Shriram Automall India Limited (SAMIL), Head Office</p><ul><li>Worked on the SAMIL Application Redesign and Development project using PHP, MySQL, HTML, CSS, Bootstrap and JavaScript.</li><li>Contributed to the Sankalp Project supporting office operations and management.</li><li>Used AI-assisted development tools to improve coding efficiency and troubleshoot issues.</li></ul></div>
-<div class="item"><div class="date">7–8 April 2026</div><h3>Volunteer & Track Coordinator</h3><p>International Conference on Emerging Trends in AI and Computational Sciences (ICETAICS 2026), Ramanujan College, University of Delhi.</p></div>
-</div></div></section>
+    <div class="portfolio-shell" id="portfolio">
+      <section class="hero page-section reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">HELLO, I'M MUSKAN <span>✦</span></p>
+          <h1>I turn ideas into<br><em>things you can use.</em></h1>
+          <p class="hero-text">Computer Science student at Ramanujan College, building practical web experiences and real-world projects with a soft spot for thoughtful design.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#work">See my work <span>↗</span></a>
+            <a class="btn secondary" href="#contact">Let's connect <span>♡</span></a>
+          </div>
+          <div class="mini-stats">
+            <span><b>01</b> live project</span>
+            <span><b>02</b> current builds</span>
+            <span><b>03</b> creative lanes</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="photo-card">
+            <div class="tape"></div>
+            <img src="profile.png" alt="Muskan's portrait" />
+            <span class="photo-caption">currently building ✎</span>
+          </div>
+          <div class="floating-tag tag-code">&lt;/&gt; code</div>
+          <div class="floating-tag tag-heart">made with ♡</div>
+          <div class="scribble">keep<br>curious</div>
+        </div>
+      </section>
 
-<section id="projects"><div class="wrap"><h2 class="title">Projects</h2><p class="sub">Selected work and hackathon projects</p><div class="grid">
-<div class="card project"><span class="tag">AI • DATABASE • HACKATHON</span><h3>Crisis Sync</h3><p>AI-assisted emergency response and communication platform enabling real-time information sharing and coordination between users.</p></div>
-<div class="card project"><span class="tag">PYTHON • NETWORKING • CYBERSECURITY</span><h3>Honeypot Security System</h3><p>Cybersecurity honeypot designed to detect and monitor unauthorized access attempts, log attacker activity and generate real-time security alerts.</p></div>
-<div class="card project"><span class="tag">PYTHON • ALGORITHMS</span><h3>Delivery Logistics</h3><p>Delivery logistics module implementing Quicksort, Bubble Sort and Dijkstra's Algorithm for sorting and route calculation.</p></div>
-<div class="card project"><span class="tag">HTML • CSS • JAVASCRIPT</span><h3>Personal Portfolio Website</h3><p>Responsive personal website showcasing skills, projects, experience and achievements.</p></div>
-</div></div></section>
+      <section class="about page-section reveal" id="about">
+        <div class="section-label">01 / about me</div>
+        <div class="about-grid">
+          <div>
+            <h2>Not just learning.<br><em>Actually building.</em></h2>
+            <p>I'm a B.Sc. Computer Science student who enjoys taking a rough idea and turning it into a working experience. I like the space where development, problem-solving and visual design overlap.</p>
+            <p>My projects range from digital safety tools to education platforms and practical academic builds. I care about making technology understandable, useful and a little more human.</p>
+          </div>
+          <div class="about-note">
+            <span class="pin">✦</span>
+            <p class="hand">things I like</p>
+            <ul>
+              <li>building useful products</li>
+              <li>clean interfaces</li>
+              <li>learning by doing</li>
+              <li>turning problems into features</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-<section><div class="wrap"><h2 class="title">Education</h2><p class="sub">Academic background</p><div class="grid">
-<div class="card"><h3>B.Sc. Computer Science</h3><p>Ramanujan College, University of Delhi<br>2024 – 2027</p></div>
-<div class="card"><h3>Class XII & Class X</h3><p>CBSE</p></div>
-</div></div></section>
+      <section class="work page-section reveal" id="work">
+        <div class="section-heading">
+          <div><div class="section-label">02 / selected work</div><h2>Things I've <em>built.</em></h2></div>
+          <p>Real-world builds first. Academic work lives a little quieter below.</p>
+        </div>
+        <div class="project-feature">
+          <div class="project-art raksha-art">
+            <span class="shield">🛡</span><span class="scan-line"></span><span class="art-label">DETECT · EXPLAIN · ACT · PROTECT</span>
+          </div>
+          <div class="project-info">
+            <div class="project-top"><span class="status live">● LIVE / DEPLOYED</span><span>01</span></div>
+            <h3>RakshaCircle</h3>
+            <p class="project-sub">AI-assisted digital safety platform</p>
+            <p>Analyze suspicious messages, links, screenshots and documents for scam or phishing indicators, manipulation signals and practical safety guidance.</p>
+            <div class="chips"><span>Python</span><span>Flask</span><span>AI APIs</span><span>Cybersecurity</span></div>
+            <a class="project-link" href="https://rakshacircle2.onrender.com/" target="_blank" rel="noreferrer">Open live project ↗</a>
+          </div>
+        </div>
 
-<section id="contact" class="contact"><div class="wrap"><h2 class="title">Let's Connect</h2><p class="sub">Open to learning, collaboration and software development opportunities.</p>
-<div class="buttons"><a class="btn primary" href="mailto:muccu484@gmail.com">Email Me</a><a class="btn" href="tel:+918851307466">+91 8851307466</a><a class="btn" href="https://www.linkedin.com/in/muskan-sharma-4a32b9333/" target="_blank">LinkedIn</a><a class="btn" href="https://github.com/Muskan99113-cell" target="_blank">GitHub</a><a class="btn" href="https://www.instagram.com/shrmx_muskan/" target="_blank">@shrmx_muskan</a></div></div></section>
-<footer>© 2026 Muskan Sharma • Built with HTML & CSS</footer>
-</body></html>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="card-top"><span class="status progress">HACKATHON / BUILD</span><span>02</span></div>
+            <div class="mini-art crisis-art"><span>CS</span><small>sync · respond · recover</small></div>
+            <h3>Crisis Sync</h3>
+            <p>A hackathon build focused on coordinating crisis information and response workflows with AI and database-backed features.</p>
+            <div class="chips"><span>AI</span><span>Database</span><span>Web</span><span>Hackathon</span></div>
+            <span class="muted-link">Hackathon project</span>
+          </article>
+          <article class="project-card">
+            <div class="card-top"><span class="status live">GITHUB / PUBLIC</span><span>03</span></div>
+            <div class="mini-art logistics-art"><span>↗</span><small>route · load · optimize</small></div>
+            <h3>Delivery Logistics</h3>
+            <p>Interactive C++ logistics optimizer covering sorting, graph routing, greedy vehicle assignment, dynamic programming and scalability.</p>
+            <div class="chips"><span>C++</span><span>Dijkstra</span><span>DP</span><span>Algorithms</span></div>
+            <a class="project-link" href="https://github.com/Muskan99113-cell/logistics-network-optimizer" target="_blank" rel="noreferrer">View on GitHub ↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="github-projects page-section reveal" id="github-projects">
+        <div class="section-heading">
+          <div><div class="section-label">03 / pinned on GitHub</div><h2>Code worth <em>exploring.</em></h2></div>
+          <p>These are the repositories currently pinned on my GitHub profile — from security and web apps to my portfolio.</p>
+        </div>
+        <div class="github-project-grid">
+          <a class="github-project-card" href="https://github.com/Muskan99113-cell/Portfolio" target="_blank" rel="noreferrer"><span class="repo-no">01</span><div><span class="repo-lang">HTML</span><h3>Portfolio</h3><p>This portfolio website — design, code and projects in one place.</p></div><span class="repo-arrow">↗</span></a>
+          <a class="github-project-card" href="https://github.com/Muskan99113-cell/rakshacircle2" target="_blank" rel="noreferrer"><span class="repo-no">02</span><div><span class="repo-lang">CSS · PYTHON</span><h3>RakshaCircle</h3><p>AI-assisted scam detection prototype with multilingual UI and family safety alerts.</p></div><span class="repo-arrow">↗</span></a>
+          <a class="github-project-card" href="https://github.com/Muskan99113-cell/Sankalp_Project" target="_blank" rel="noreferrer"><span class="repo-no">03</span><div><span class="repo-lang">PHP</span><h3>Sankalp Project</h3><p>SAMIL web portal with gallery, upload, feedback, profile and company information features.</p></div><span class="repo-arrow">↗</span></a>
+          <a class="github-project-card" href="https://github.com/Muskan99113-cell/Team_Samil" target="_blank" rel="noreferrer"><span class="repo-no">04</span><div><span class="repo-lang">PHP</span><h3>Team_Samil</h3><p>A SAMIL-focused web development repository from my internship work.</p></div><span class="repo-arrow">↗</span></a>
+        </div>
+        <div class="github-more"><a class="btn secondary" href="https://github.com/Muskan99113-cell" target="_blank" rel="noreferrer">See all repositories ↗</a></div>
+      </section>
+
+      <section class="academic page-section reveal">
+        <div class="section-label">05 / academic corner</div>
+        <div class="academic-head"><h2>Learning, <em>in public.</em></h2><p>Small builds that helped me understand the foundations behind the bigger ones.</p></div>
+        <div class="academic-grid">
+          <article><span>01</span><h3>Delivery Logistics</h3><p>Python · sorting algorithms · Dijkstra · route optimisation</p></article>
+          <article><span>02</span><h3>Honeypot Security System</h3><p>Python · networking · cybersecurity concepts</p></article>
+          <article><span>03</span><h3>Crisis Sync</h3><p>AI · database · hackathon project</p></article>
+        </div>
+      </section>
+
+      <section class="hackathons page-section reveal" id="hackathons">
+        <div class="section-label">04 / hackathons & builds</div>
+        <div class="academic-head"><h2>Problems I tried to <em>solve.</em></h2><p>Project work that pushed me beyond coursework and into real problem-solving.</p></div>
+        <div class="hackathon-grid">
+          <article><span>01</span><h3>RakshaCircle</h3><p>Digital safety and scam detection platform using Flask, AI APIs, multilingual UI and family alerts.</p><div class="chips"><span>AI</span><span>Cybersecurity</span><span>Flask</span></div><a href="https://rakshacircle2.onrender.com/" target="_blank" rel="noreferrer">Live project ↗</a></article>
+          <article><span>02</span><h3>Crisis Sync</h3><p>Hackathon project exploring AI + database workflows for crisis coordination and response.</p><div class="chips"><span>AI</span><span>Database</span><span>Hackathon</span></div></article>
+          <article><span>03</span><h3>Delivery Logistics</h3><p>Algorithmic logistics project for route planning, package prioritization, vehicle assignment and optimal loading.</p><div class="chips"><span>C++</span><span>Graph Algorithms</span><span>DP</span></div><a href="https://github.com/Muskan99113-cell/logistics-network-optimizer" target="_blank" rel="noreferrer">GitHub ↗</a></article>
+          <article><span>04</span><h3>Honeypot Security</h3><p>Python Flask honeypot API that detects and logs suspicious requests, headers and payloads for security analysis.</p><div class="chips"><span>Python</span><span>Flask</span><span>Security</span></div><a href="https://github.com/Muskan99113-cell/honeypot-api" target="_blank" rel="noreferrer">GitHub ↗</a></article>
+        </div>
+      </section>
+
+      <section class="experience page-section reveal" id="experience">
+        <div class="section-label">06 / experience</div>
+        <div class="timeline">
+          <article class="timeline-item"><div class="date">18 JUN — 31 JUL 2026</div><div><h3>Web Development Intern</h3><p class="role">Technology Department · Shriram Automall India Limited (SAMIL)</p><ul><li>Worked on application redesign and development.</li><li>Used PHP, MySQL, HTML, CSS, Bootstrap and JavaScript.</li><li>Contributed to the Sankalp project and used AI-assisted development tools.</li></ul></div></article>
+          <article class="timeline-item"><div class="date">07 — 08 APR 2026</div><div><h3>Volunteer & Track Coordinator</h3><p class="role">ICETAICS 2026 · Ramanujan College, University of Delhi</p><p>Supported event coordination and track-level execution for the conference.</p></div></article>
+        </div>
+      </section>
+
+      <section class="skills page-section reveal" id="skills">
+        <div class="section-label">07 / toolkit</div>
+        <div class="skills-layout"><h2>My current<br><em>toolbox.</em></h2><div class="skill-columns">
+          <div><h3>Programming</h3><p>Python · C · C++ · PHP · JavaScript</p></div>
+          <div><h3>Web</h3><p>HTML · CSS · Bootstrap · React · Tailwind CSS · Vite · Flask</p></div>
+          <div><h3>Data & AI</h3><p>MySQL · PostgreSQL · SQL · Machine Learning · AI APIs · Data preprocessing</p></div>
+          <div><h3>Tools & CS</h3><p>Git · GitHub · Docker · Linux · REST APIs · JSON · Data Structures · Algorithms · DBMS · OS · Networking · Prolog</p></div>
+        </div></div>
+      </section>
+
+      <section class="education page-section reveal" id="education">
+        <div class="section-label">08 / education</div>
+        <div class="education-card"><div class="year">2024<br>—<br>2027</div><div><p class="eyebrow">CURRENTLY STUDYING</p><h2>B.Sc. Computer Science</h2><p>Ramanujan College · University of Delhi</p></div><span class="stamp">CS<br>✦</span></div>
+        <div class="school-row"><span>CBSE</span><p>Class XII & X</p><span class="small-note">foundation years ✎</span></div>
+      </section>
+
+      <section class="github-strip reveal">
+        <div><span class="eyebrow">OPEN SOURCE / CODE</span><h2>Want to see the messy middle?</h2><p>My GitHub has the experiments, commits and code behind the polished pieces.</p></div>
+        <a class="btn primary" href="https://github.com/Muskan99113-cell" target="_blank" rel="noreferrer">Explore GitHub ↗</a>
+      </section>
+
+      <section class="contact page-section reveal" id="contact">
+        <div class="contact-card"><div class="section-label">09 / say hello</div><h2>Have an idea?<br><em>Let's make it real.</em></h2><p>I'm always open to interesting projects, collaborations and conversations around tech.</p><a class="email" href="mailto:muccu484@gmail.com">muccu484@gmail.com ↗</a><div class="socials"><a href="https://www.linkedin.com/in/muskan-sharma-4a32b9333/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/Muskan99113-cell" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.instagram.com/shrmx_muskan/" target="_blank" rel="noreferrer">Instagram</a></div></div>
+      </section>
+    </div>
+  </main>
+
+  <footer><span>© 2026 Muskan Sharma</span><span>built with curiosity + caffeine ☕</span><a href="#top">back to top ↑</a></footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
