@@ -9,7 +9,7 @@ notebook?.addEventListener('click', () => {
 });
 
 
-const links = [...document.querySelectorAll('.nav a')];
+const links = [...document.querySelectorAll('.nav a[href^="#"]')];
 
 const sections = links
   .map(a => document.querySelector(a.getAttribute('href')))
@@ -88,3 +88,46 @@ if (dot && matchMedia('(pointer:fine)').matches) {
   });
 
 }
+
+
+const navToggle = document.querySelector('.nav-toggle');
+
+const navMenu = document.querySelector('#primary-nav');
+
+
+function setMenu(open) {
+
+  if (!navToggle || !navMenu) return;
+
+  navMenu.classList.toggle('open', open);
+
+  navToggle.setAttribute('aria-expanded', String(open));
+
+  navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+
+}
+
+
+navToggle?.addEventListener('click', () => {
+  setMenu(!navMenu.classList.contains('open'));
+});
+
+
+navMenu?.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => setMenu(false));
+});
+
+
+document.addEventListener('click', event => {
+  if (!event.target.closest('.site-header')) setMenu(false);
+});
+
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') setMenu(false);
+});
+
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 850) setMenu(false);
+});
